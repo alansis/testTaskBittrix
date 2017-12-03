@@ -19,30 +19,37 @@ $select = new select();
     <title>Вивід коментарів</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="js/GetdateFromThiscategory.js"></script>
     <script type="text/javascript" src="js/ListCategory.js"></script>
-    <script src="js/markerclusterer.js"></script>
-    <script src="js/map.js"></script>
-    <script src="js/DateToStartPage.js"></script>
-    <script src="js/GetOnePlace.js"></script>
+
+    <script type="text/javascript" src="bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap-select/js/i18n/defaults-ua_UA.js"></script>
+
+    <script type="text/javascript" src="js/markerclusterer.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/DateToStartPage.js"></script>
+    <script type="text/javascript" src="js/GetOnePlace.js"></script>
 
 </head>
 <body>
 <div class="container">
+
     <select class="form-control" id="selectCategory" onchange="SelectCategories()">
         <option value="-1"></option>
         <?php $select->allCategory() ?>
+
     </select>
 
     <select class="form-control" id="ListCategory">
         <option value="-1"></option>
-
     </select>
-    <button class="btn btn-primary" id="submit" onclick="SelectOnePlace()">Найти</button>
+    <button class="btn btn-primary" id="submit"  onclick="SelectOnePlace()">Найти</button>
 
 <div id="map">
 

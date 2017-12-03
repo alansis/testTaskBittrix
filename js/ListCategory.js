@@ -12,5 +12,6 @@ function addOption(dateRequst) {
         option.appendChild(content);
         List.appendChild(option);
     }
+
 }
 

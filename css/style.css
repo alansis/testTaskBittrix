@@ -3,3 +3,8 @@
     height: 400px;
     background-color: grey;
 }
+
+.form-control{
+    width: 30%;
+    display: inline;
+}
